@@ -16,7 +16,7 @@ public class CourseManager {
     public void removeCourse(String courseId) {
         boolean removed = courses.removeIf(c -> c.getId().equals(courseId));
         if (removed)
-            System.out.println("Course removed.");
+            System.out.println("Course "+ courseId +" removed.");
         else
             System.out.println("Course not found.");
     }
